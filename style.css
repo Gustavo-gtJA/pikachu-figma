@@ -43,7 +43,7 @@ h1{
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 300px;
+    font-size:20vw;
     color: white;
     flex-grow: 1;
 
@@ -98,4 +98,44 @@ footer{
     align-items: center;
     font-size: 48px;
     color: white;
+}
+/* TABLET */
+@media (max-width: 768px) {
+    body{
+        padding: 30px;
+    }
+    footer{
+        display: none;
+    }
+    .sombra{
+
+        transform: translate(-50%, -170%);
+        font-size:24vw;
+
+    }
+    main{
+        justify-content: space-between;
+    }
+    h1{
+        align-items: start;
+        transform: translateY(20%);
+        /*flex-grow: 0.9;*/
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+
+    }
+    .descricao p{
+        text-align: center;
+
+    }
+}/* Mobile*/
+@media (max-width:480px){
+    body{
+        background-color: black;
+    }
+  
 }
